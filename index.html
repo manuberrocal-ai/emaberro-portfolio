@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emanuel Barro – AI Art & Photo Editing</title>
+    <style>
+        /* Global resets and typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+        h1, h2, h3 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        /* Container utility */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        /* Hero section */
+        .hero {
+            background: url('f3b79b51-fa8f-4563-b161-210d10718268.png') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 8rem 1rem;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            color: #fff;
+            background: #007bff;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .button.secondary {
+            background: #28a745;
+        }
+        .button:hover {
+            opacity: 0.9;
+        }
+        /* Features section */
+        .features {
+            background: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .features .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .features .feature {
+            padding: 2rem;
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+        /* Services section */
+        .services {
+            background: #e9ecef;
+            padding: 4rem 0;
+        }
+        .services .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .services .service {
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        /* Portfolio */
+        .portfolio {
+            background: #fff;
+            padding: 4rem 0;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        /* Testimonials */
+        .testimonials {
+            background: #f7f7f7;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .testimonial {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            font-style: italic;
+        }
+        /* About section */
+        .about {
+            background: #fff;
+            padding: 4rem 0;
+        }
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        /* Contact */
+        .contact {
+            background: #e9ecef;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .contact .button-group {
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>AI Art & Photo Editing for Your Business</h1>
+            <p>Transform your brand’s visuals with professional AI‑powered editing and bespoke digital art. Fast turnaround and unlimited revisions for entrepreneurs and creatives.</p>
+            <div class="button-group">
+                <a href="https://www.fiverr.com/emaberro" class="button">Order on Fiverr</a>
+                <a href="mailto:contact@example.com" class="button secondary">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose AI Editing?</h2>
+            <p>Harness the power of artificial intelligence combined with human creativity to create images that captivate and convert.</p>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Professional Quality</h3>
+                    <p>Crisp, clean edits that elevate your photos for social media, e‑commerce, and marketing materials.</p>
+                </div>
+                <div class="feature">
+                    <h3>Custom AI Art</h3>
+                    <p>Unique, AI‑generated artwork tailored to your brand’s identity—perfect for logos, banners and illustrations.</p>
+                </div>
+                <div class="feature">
+                    <h3>Fast Turnaround</h3>
+                    <p>Quick delivery without compromising quality, with unlimited revisions until you are satisfied.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service">
+                    <h3>Photo Enhancement</h3>
+                    <p>Bring your images to life with color correction, retouching, and background enhancements.</p>
+                </div>
+                <div class="service">
+                    <h3>AI Digital Artwork</h3>
+                    <p>Generate captivating AI artwork for social posts, advertising, album covers, and more.</p>
+                </div>
+                <div class="service">
+                    <h3>Brand Packages</h3>
+                    <p>Full‑service packages combining photo edits, custom art, and creative guidance to establish your brand identity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Explore a selection of our recent projects to see the quality and diversity of our work.</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="f3b79b51-fa8f-4563-b161-210d10718268.png" alt="AI Art Sample">
+                </div>
+                <div class="portfolio-item">
+                    <img src="f3b79b51-fa8f-4563-b161-210d10718268.png" alt="Photo Edit Sample">
+                </div>
+                <div class="portfolio-item">
+                    <img src="f3b79b51-fa8f-4563-b161-210d10718268.png" alt="Custom Design Sample">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Clients Say</h2>
+            <div class="testimonial">
+                <p>“Emanuel provided outstanding artwork for our marketing campaign. The AI‑generated art was exactly what we needed to stand out!”</p>
+                <strong>– Sarah L., Marketing Manager</strong>
+            </div>
+            <div class="testimonial">
+                <p>“Fast, professional photo edits that elevated our e‑commerce store. Highly recommend his services for any entrepreneur.”</p>
+                <strong>– Jason M., Online Store Owner</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Emanuel</h2>
+            <p>Emanuel Barro is a digital artist and AI photo editor based in Córdoba. He combines state‑of‑the‑art machine intelligence with years of creative experience to deliver custom visuals that resonate with your audience. Dedicated to fast delivery, clear communication and unlimited revisions, Emanuel ensures every project reflects your brand’s story.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Ready to start your next project or have questions? Reach out today and let’s elevate your visuals together.</p>
+            <div class="button-group">
+                <a href="https://www.fiverr.com/emaberro" class="button">Order on Fiverr</a>
+                <a href="mailto:contact@example.com" class="button secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
